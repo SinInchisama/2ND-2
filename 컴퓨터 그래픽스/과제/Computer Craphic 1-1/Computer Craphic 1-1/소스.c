@@ -53,7 +53,9 @@ int main() {
 
 		case 'r':
 			printarray(&array[0]);
+			printf("= %d\n",determinant(array[0]));
 			printarray(&array[1]);
+			printf("= %d\n",determinant(array[1]));
 			break;
 
 		case 't':
@@ -62,7 +64,9 @@ int main() {
 			array[1] = changearray(array[1]);
 
 			printarray(&array[0]);
+			printf("= %d\n", determinant(array[0]));
 			printarray(&array[1]);
+			printf("= %d\n", determinant(array[1]));
 			break;
 
 		case 'h':
@@ -76,7 +80,7 @@ int main() {
 			}
 			else size = 3;
 			break;
-
+			
 		case 's':
 			initarray(array);
 			break;
@@ -118,14 +122,16 @@ void printarray(ARRAY* array) {
 		printf("\n");
 	}
 
-	printf("\n\n");
+	printf("");
 }
 
 int determinant(ARRAY array) {
 	int det = 0;
-	if (size == 3) {
+	
+	det = array.number[0][0] * array.number[1][1] * array.number[2][2] + array.number[0][1] * array.number[1][2] * array.number[2][0] + array.number[0][2] * array.number[1][0] * array.number[2][1]
+		- array.number[0][0] * array.number[1][2] * array.number[2][1] - array.number[0][1] * array.number[1][0] * array.number[2][2] - array.number[0][2] * array.number[1][1] * array.number[2][1];
 
-	}
+	return det;
 }
 
 ARRAY mularray(ARRAY* array) {
