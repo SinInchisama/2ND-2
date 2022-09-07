@@ -1,0 +1,7 @@
+﻿  소스.c
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\Computer Graphic 0-2\Computer Graphic 0-2\Computer Graphic 0-2\소스.c(14,16): warning C4133: '함수': 'FILE *'과(와) 'const char *const ' 사이의 형식이 호환되지 않습니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\Computer Graphic 0-2\Computer Graphic 0-2\Computer Graphic 0-2\소스.c(29,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\Computer Graphic 0-2\Computer Graphic 0-2\Computer Graphic 0-2\소스.c(29,9): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\Computer Graphic 0-2\Computer Graphic 0-2\Computer Graphic 0-2\소스.c(10,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\Computer Graphic 0-2\Computer Graphic 0-2\Computer Graphic 0-2\소스.c(12,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Computer Graphic 0-2.vcxproj -> C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\Computer Graphic 0-2\Computer Graphic 0-2\x64\Debug\Computer Graphic 0-2.exe
