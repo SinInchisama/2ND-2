@@ -5,6 +5,7 @@
 
 void printallsentence(char sentence[][100]);
 void reverssentence(char sentence[][100]);
+void addalpha(char sentence[][100]);
 
 int main() {
 	char filename[11];
@@ -50,6 +51,7 @@ int main() {
 			break;
 			
 		case 'e':
+			addalpha(buffer);
 			break;
 
 		case 'f':
@@ -85,5 +87,25 @@ void reverssentence(char sentence[][100]) {
 		}
 		
 		strcpy(sentence[i],reverse);
+	}
+}
+
+void addalpha(char sentence[][100]) {
+	for (int i = 0; i < 10; i++) {
+		char newsentence[100] = { NULL };
+		int count = 0,wordcount = 0;
+
+		for (int j = 0; j < strlen(sentence[i]); j++) {
+
+			newsentence[count++] = sentence[i][j];
+
+			if (++wordcount == 3) {
+				for (int k = 0; k < 2; k++)
+					newsentence[count++] = '@';
+				wordcount = 0;
+			}
+		}
+
+		strcpy(sentence[i], newsentence);
 	}
 }
