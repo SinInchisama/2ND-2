@@ -29,6 +29,35 @@ ex) name[-1]		namne[-2]
 
 name[::3] ==> 3까지 step한다는 뜻	결과물 : 'Snnm'   
 
-★★문자열 배열부분 어떤 의미를 나타내는지 시험문제로 나옴. 꼭 봐볼거
+title[::-1]
+'gnimmargorP emaG D2 nohtyp'	=> 뒤로 간다. 거꾸로 간다.
 
 
+★★문자열 배열부분 어떤 의미를 나타내는지 시험문제로 나옴. 꼭 봐볼거	sliece부분 그대로나옴.
+
+
+
+대부분의 자료구조는 집합적인 데이터들을 효과적으로 관리하기위해 틀을 짜는 것이다
+
+list = 여러개의 데이터들의 집합,데이터들이 중요한 순서를 갖고 있는 중복을 허용하는 데이터들
+ex) 	ohmygirl = ['hyojeong','senghi','mimi','yooa','jiho','yubin','arin']	
+    	ohmygirl.sort()
+	ohmygirl['arin', 'hyojeong', 'jiho', 'mimi', 'senghi', 'yooa', 'yubin']	
+	
+	len(ohmygirl)
+	7
+	
+	unit = twic + ohmygirl
+	unit
+	['momo', 'sana', 'zwi', 'nayeon', 'dayun', 'arin', 'hyojeong', 'jiho', 'mimi', 'senghi', 'yooa', 'yubin']
+	
+	unit = twic + ohmygirl
+	unit
+	['momo', 'sana', 'zwi', 'nayeon', 'dayun', 'arin', 'hyojeong', 'jiho', 'mimi', 'senghi', 'yooa', 'yubin']	
+
+	unitbanana = ohmygirl[:3]
+	unitbanana
+	['arin', 'hyojeong', 'mimi']
+
+	unitbanana.append('yubin')		// 추가하는 방법
+	ohmygirl = ohmygirl + ['jiho']
