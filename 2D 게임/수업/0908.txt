@@ -61,3 +61,39 @@ ex) 	ohmygirl = ['hyojeong','senghi','mimi','yooa','jiho','yubin','arin']
 
 	unitbanana.append('yubin')		// 추가하는 방법
 	ohmygirl = ohmygirl + ['jiho']
+
+	'jiho' in ohmygirl
+	False
+	'yubin' in ohmygirl
+	True
+
+
+key value fair = 단서로 넣어주는 데이터로 원하는 데이터를 찾는 방법.
+딕션너리 => key value fair를 사용하는 python 자료구조.
+	list는 인덱스를 근거로 딕션너리는 key를 근거로 데이터를 찾아온다
+
+ex)	score = {'arin':99,'hyojeng':94,'mimi':95,'yooa':96,'yubin':97,'senghi':95}
+	score['arin']
+	99
+
+	score['jiho']=97
+	score['jiho']
+	97
+
+	'jini' in score
+	False
+	'jiho' in score
+	True
+
+
+Tuple
+여러 개의 값을 동시에 관리 리스트와 유사하나 리스트는 자유롭게 값을 변경할 수 있지만, Tuple은 값을 변경할 수 없다.
+따라서 상수데이터라도 함.
+t2 = (1,)로 하지않으면 Tuple로 인식하지않음 ex) t2 = (1) => int	t2 = (1,) => Tuple
+
+ex) 
+t1 = (1,2,3)
+t2 = (1,)
+t3 = ()
+t4 = 1,2,3,4			=> 전부다 Tuple로 인식
+t5(1,'a','park',(1,2))			=> Tuple내에 숫자, 문자, Tuple도 올 수 있음.
