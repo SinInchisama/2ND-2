@@ -5,7 +5,12 @@
 
 void printallsentence(char sentence[][100]);
 void reverssentence(char sentence[][100]);
-void addalpha(char sentence[][100]);
+void reversword(char sentence[][100]);
+void changealpha(char sentence[][100]);
+void overlapword(char sentence[][100]);
+//void addalpha(char sentence[][100]);
+
+int addalpha = 0;
 
 int main() {
 	char filename[11];
@@ -43,6 +48,8 @@ int main() {
 		printallsentence(buffer);
 
 		scanf(" %c", &command);
+		system("cls");
+		
 
 		switch (command)
 		{
@@ -51,16 +58,22 @@ int main() {
 			break;
 			
 		case 'e':
-			addalpha(buffer);
+			if (!addalpha)
+				addalpha = 1;
+			else
+				addalpha = 0;
+			/*addalpha(buffer);*/
 			break;
-
 		case 'f':
+			reversword(buffer);
 			break;
 
 		case 'g':
+			changealpha(buffer);
 			break;
 
 		case 'h':
+			overlapword(buffer);
 			break;
 
 		case 'q':
@@ -73,8 +86,15 @@ int main() {
 
 void printallsentence(char sentence[][100]) {
 	for (int i = 0; i < 10; i++) {
-		for (int j = 0; j < strlen(sentence[i]); j++)
+		int add = 1;
+		printf("%c", sentence[i][0]);
+		for (int j = 1; j < strlen(sentence[i]); j++) {
+			if (addalpha) {
+				if ((add++) % 3 == 0)
+					printf("@@");
+			}
 			printf("%c", sentence[i][j]);
+		}
 		printf("\n");
 	}
 }
@@ -90,22 +110,58 @@ void reverssentence(char sentence[][100]) {
 	}
 }
 
-void addalpha(char sentence[][100]) {
+void reversword(char sentence[][100]) {
 	for (int i = 0; i < 10; i++) {
-		char newsentence[100] = { NULL };
-		int count = 0,wordcount = 0;
+		int prev = 0, next;
+		
+		for (int j = 1; j < strlen(sentence[i]); j++) {
+			if (sentence[i][j] == ' ') {
+				char reverse[20] = { NULL };
+				for (int k = 0; k < j - prev; k++)
+					reverse[k] = sentence[i][j - k - 1];
+				for (int k = prev; k < j; k++)
+					sentence[i][k] = reverse[k - prev];
 
-		for (int j = 0; j < strlen(sentence[i]); j++) {
-
-			newsentence[count++] = sentence[i][j];
-
-			if (++wordcount == 3) {
-				for (int k = 0; k < 2; k++)
-					newsentence[count++] = '@';
-				wordcount = 0;
+				prev = j + 1;
 			}
 		}
 
-		strcpy(sentence[i], newsentence);
+		char reverse[20] = { NULL };
+		for (int k = 0; k < strlen(sentence[i]) - prev; k++)
+			reverse[k] = sentence[i][strlen(sentence[i]) - k - 1];
+		for (int k = prev; k < strlen(sentence[i]); k++)
+			sentence[i][k] = reverse[k - prev];
+	}
+}
+
+void changealpha(char sentence[][100]) {
+	char change[3];
+	printf("바꿀 단어를 입력해주세요 ex) ab  대소문자도 맞추어주세요\n");
+	scanf("%s", change);
+
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < strlen(sentence[i]); j++) {
+			if (sentence[i][j] == change[0])
+				sentence[i][j] = change[1];
+		}
+	}
+}
+
+void overlapword(char sentence[][100]) {
+	for (int i = 0; i < 10; i++) {
+		if (sentence[i][0] == sentence[i][strlen(sentence[i]) - 1]) {
+			int prev = 0,next;
+			char copy[20] = {'\0'};
+			for (int j = 0; j < strlen(sentence[i]); j++) {
+				if (sentence[i][j] == sentence[i][strlen(sentence[i]) - 1 - j])
+					next = j;
+				else
+					break;
+			}
+			for (int j = prev; j <= next; j++)
+				copy[j] = sentence[i][j];
+
+			printf("%d번째 문장 %s\n",i,copy);
+		}
 	}
 }

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d8d986d2-260e-4365-901c-ecfbf5a08ffa": {
+      "ProjectGuid": "d8d986d2-260e-4365-901c-ecfbf5a08ffa",
+      "DisplayName": "Computer Graphics 0-6",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
