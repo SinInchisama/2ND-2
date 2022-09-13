@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <windows.h>
 #include <stdlib.h>
+#include <conio.h>
 
 void print_board(char board[][4], int viewboard[][4]);
 void init_board(char board[][4], int viewboard[][4]);
@@ -21,6 +22,7 @@ int main()
 
 	for (int i = 0; i < 20; i++) {
 		for (int j = 0; j < 2; j++) {
+			if (_kbhit())
 			system("cls");
 			print_board(board, viewboard);
 			printf("count %d, score %d\n", 20 - i, score);
@@ -36,7 +38,7 @@ int main()
 			else if (line == 'q')
 				break;
 			else
-				viewboard[row-1][line - 97] = 2;
+				viewboard[row-1][line - 97] = 1;
 		}
 
 		if (line == 'q' || line == 'r')

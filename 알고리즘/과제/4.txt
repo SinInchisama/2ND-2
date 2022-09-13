@@ -1,0 +1,80 @@
+Bubble/Selection/Insertion Sort
+https://www.youtube.com/watch?v=Bor_CRWEIXo - 
+
+Big o가 모든 알고리즘을 설명하는 것은 아니다	
+
+버블정렬 	- 2개비교 왼쪽이 오른쪽보다 크면 swap으로 첫번째부터 맨끝 - n까지 n번 반복해서 도는 방법
+	  시간복잡도 O(n^2)
+
+선택정렬 - 가장 작은수를 찾고나서 n번째 항에 있는 숫자와 swap해서 n번 반복해서 도는 방법
+	  시간복잡도 O(n^2) 단 swap은 무조건 한번 일어나므로 버블정렬보다는 좋다
+
+삽입정렬 - n번째 숫자가 자신의 왼쪽보다 크거나 같을때까지 계속 스왑하는 방법
+	 선택정렬보다는 빠름 필요한 것만 찾기때문에 하지만 O(n^2)
+
+다른 알고리즘인데 같은 시간 복잡도를 보인다는점에서 평균 시간복잡도도 봐야됨
+평균 시간복잡도는 삽입 정렬은 n 나머진 n^2입니다
+
+
+
+Bubble Sort
+https://www.youtube.com/watch?v=YbsQiiubO74 - 
+재귀함수로 맨 마지막꺼를 뺴고 돌리기위하여 n-1를 매개변수로 집어넣어 최종적으로 1만 남아 끝이 나게 한다.
+
+
+Selection Sort
+https://www.youtube.com/watch?v=uCUu3fF5Dws - 
+가장 작은 값부터 앞으로 옮기는 정렬방법.
+재귀함수 start을 넣는데 이때 함수를 돌 때마다 +1해서 뒤로 가는 방식.
+
+
+Shell Sort
+https://www.youtube.com/watch?v=nyTxe-sR0rw -
+삽입 정렬의 단점을 보완하기 위해 만들어진 정렬 방법
+부분으로 나누어서 정렬을 하는 것을 반복 후 마지막에 삽입 정렬을 사용하여 정렬
+Avg가 n^2으로 줄어듬
+
+
+Heap 관련
+Tree 기본 (특히: Complete Binary Tree)
+https://www.youtube.com/watch?v=LnxEBW29DOw-
+부모 자식 관계는 가지는 관계. 트리 맨 끝 자식 없는 노드는 leaf라고함
+바이너리 트리 - 자식을 최대 2개 갖는 트리
+이진 검색트리 - 왼쪽 자식 노드는 자신보다 작고 오른쪽은 자신보다 커야함
+밸런스가 맞는 트리 - red-black tree, AVL tree
+완전 이진 트리 - 마지막 레벨이 왼쪽부터 채워져있으면 완전이진트리
+풀바이너리 트리 - 자식 노드를 2개 가지거나 하나도 없어야 한다.
+퍼펙트 바이너리 트리 - 마지막 레벨까지 꽉 차있는 트리
+
+Binary Heap
+https://www.youtube.com/watch?v=jfwjyJvbbBI
+최대 값이나 최소 값을 찾아내는 빠르게 하기 위해 고안된 완전 이진 트리를 기본으로한 자료구조
+최소힙,최대힙 - 가장 작은(큰) 값이 부모로 갖도록 하는 트리
+최소힙에 노드를 삽입하면 마지막 레벨에 마지막 노드에 추가한 후 부모노드랑 비교한 후 부모노드가 자신보다 작을 떄 까지 반복한다.
+가장 작은 값은 빼 온후 마지막 노드를 가져온 후 자식 노드와 비교한 후 자신보다 작은 거 그리고 둘 중 더 작은거를 위로 올리고를 반복한다.
+
+
+
+Heap Sort (특히: Complete Binary Tree 를 배열로 표현하는 법)
+https://www.youtube.com/watch?v=iyl9bfp_8ag
+힙 정렬은 병합 정렬와 퀵 정렬과 같이 O(nlogn)이 나온다. 힙 트리 구조를 이용한 방법.
+힙구조를 만드는데 걸리는 시간은 높이만큼만 계산하면 되기 때문에 O(log n)이고 데이터의 개수는 n개이므로
+시간복잡도는 O(nlogn)이다.
+
+
+Radix Sort
+https://www.youtube.com/watch?v=7heKwjqkY60
+https://www.youtube.com/watch?v=eCnKp9bzErg
+Radix Sort는 counting sort를 사용함. counting sort에 경우 가장 큰 값에서 가장 작은 값은 뺀만큼 공간이 필요한데 Radix Sort는 십진수표기법 기준 10개 공간
+자리수별로 정렬하는것. 먼저 가장 낮은 자리수부터 정렬하는데 이때 stable을 사용한다.	O(n+k) * w  (w : 주어진 array의 최대 자리수, k : 자리수 sort값)
+
+
+
+
+다음 영상 및 페이지 방문을 하고 자료가 의미하는 것을 정리하라. 특히 두번째 자료에서는 막대의 두께에 주목하라
+
+Animation
+https://www.toptal.com/developers/sorting-algorithms
+15 Algorithms
+https://www.youtube.com/watch?v=kPRA0W1kECg
+ 

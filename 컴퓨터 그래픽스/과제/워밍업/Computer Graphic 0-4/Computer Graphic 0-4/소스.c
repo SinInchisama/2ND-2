@@ -23,23 +23,32 @@ int main() {
 		printf("Rect 2 : (%d, %d) (%d, %d)\n", rectangle[1].x, rectangle[1].y, rectangle[1].x + 100, rectangle[1].y + 100);
 		printf("order : %d \n", round);
 		scanf(" %c", &c);
+		system("cls");
 
 		switch (c) {
 		case 'w':
 			if (rectangle[round].y - 30 >= 0)
 				rectangle[round].y = rectangle[round].y - 30;
+			else
+				printf("%d crash Wall\n",round);
 			break;
 		case 's':
 			if (rectangle[round].y + 130 <= 600)
 				rectangle[round].y = rectangle[round].y + 30;
+			else 
+				printf("%d crash Wall\n", round);
 			break;
 		case 'd':
 			if (rectangle[round].x + 130 <= 800)
 				rectangle[round].x = rectangle[round].x + 30;
+			else
+				printf("%d crash Wall\n", round);
 			break;
 		case 'a':
 			if (rectangle[round].x - 30 >= 0)
 				rectangle[round].x = rectangle[round].x - 30;
+			else
+				printf("%d crash Wall\n", round);
 			break;
 		case 'q':
 			break;

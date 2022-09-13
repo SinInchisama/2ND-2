@@ -81,6 +81,11 @@ int main() {
 				array[1].number[3][3] = array[0].number[3][3] = 1;
 			}
 			else size = 3;
+
+			printarray(&array[0]);
+			printf("= %d\n", determinant(array[0]));
+			printarray(&array[1]);
+			printf("= %d\n", determinant(array[1]));
 			break;
 			
 		case 's':
