@@ -28,6 +28,8 @@ int main() {
 
 	while (select != 'q') {
 
+		printarray(&array[0]);
+		printarray(&array[1]);
 		scanf(" %c", &select);
 		system("cls");
 		printmenu();
@@ -128,7 +130,7 @@ void printarray(ARRAY* array) {
 			printf(" %d ", array->number[i][j]);
 		printf("\n");
 	}
-
+	printf("\n");
 	printf("");
 }
 
@@ -136,7 +138,7 @@ int determinant(ARRAY array) {
 	int det = 0;
 	
 	det = array.number[0][0] * array.number[1][1] * array.number[2][2] + array.number[0][1] * array.number[1][2] * array.number[2][0] + array.number[0][2] * array.number[1][0] * array.number[2][1]
-		- array.number[0][0] * array.number[1][2] * array.number[2][1] - array.number[0][1] * array.number[1][0] * array.number[2][2] - array.number[0][2] * array.number[1][1] * array.number[2][1];
+		- array.number[0][0] * array.number[1][2] * array.number[2][1] - array.number[0][1] * array.number[1][0] * array.number[2][2] - array.number[0][2] * array.number[1][1] * array.number[2][0];
 
 	return det;
 }

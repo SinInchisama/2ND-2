@@ -1,4 +1,1 @@
-﻿  소스.c
-C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-4\Computer Graphic 0-4\소스.c(17,12): warning C4013: 'time'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-4\Computer Graphic 0-4\소스.c(25,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Computer Graphic 0-4.vcxproj -> C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-4\x64\Debug\Computer Graphic 0-4.exe
+﻿  Computer Graphic 0-4.vcxproj -> C:\Users\sun98\OneDrive\Desktop\2ND 2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-4\x64\Debug\Computer Graphic 0-4.exe

@@ -34,7 +34,9 @@ int main() {
 		int big = 0;
 
 		for (int j = 0; j < strlen(buffer[i]);j++) {
-			if (buffer[i][j] == ' ' ) {
+			if (!big && isupper(buffer[i][j]))
+				big = 1;
+			if (buffer[i][j] == ' ') {
 				if (buffer[i][j - 1] != ' ') {
 					if (judg == 0) {
 						wordcount++;
@@ -47,11 +49,9 @@ int main() {
 				judg = 1;
 				big = 0;
 			}
-			else if (judg&&isalpha(buffer[i][j]))
+			else if (judg && isalpha(buffer[i][j]))
 				judg = 0;
 
-			if (!big && isupper(buffer[i][j]))
-				big = 1;
 		}
 
 		if (judg == 0) {
@@ -62,6 +62,10 @@ int main() {
 		else if (judg == 1)
 			numcount++;
 	}
+
+	printf("word count: %d \n", wordcount);
+	printf("number count: %d \n",numcount);
+	printf("Capital word: %d \n",bigcount);
 
 	return 0;
 }

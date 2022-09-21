@@ -1,12 +1,1 @@
-﻿  소스.c
-C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-3\Computer Graphic 0-3\소스.c(25,16): warning C4133: '함수': 'FILE *'과(와) 'const char *const ' 사이의 형식이 호환되지 않습니다.
-C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-3\Computer Graphic 0-3\소스.c(21,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-3\Computer Graphic 0-3\소스.c(23,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-3\Computer Graphic 0-3\소스.c(50,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-3\Computer Graphic 0-3\소스.c(104,1): warning C4047: '초기화 중': 'char'의 간접 참조 수준이 'void *'과(와) 다릅니다.
-C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-3\Computer Graphic 0-3\소스.c(109,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-3\Computer Graphic 0-3\소스.c(119,1): warning C4047: '초기화 중': 'char'의 간접 참조 수준이 'void *'과(와) 다릅니다.
-C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-3\Computer Graphic 0-3\소스.c(129,1): warning C4047: '초기화 중': 'char'의 간접 참조 수준이 'void *'과(와) 다릅니다.
-C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-3\Computer Graphic 0-3\소스.c(115,17): warning C4101: 'next' :참조되지 않은 지역 변수입니다.
-C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-3\Computer Graphic 0-3\소스.c(140,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Computer Graphic 0-3.vcxproj -> C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-3\x64\Debug\Computer Graphic 0-3.exe
+﻿  Computer Graphic 0-3.vcxproj -> C:\Users\sun98\OneDrive\Desktop\2ND 2\컴퓨터 그래픽스\과제\워밍업\Computer Graphic 0-3\x64\Debug\Computer Graphic 0-3.exe

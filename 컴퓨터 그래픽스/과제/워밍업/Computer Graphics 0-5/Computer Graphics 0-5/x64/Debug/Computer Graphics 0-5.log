@@ -1,4 +1,4 @@
 ﻿  소스.c
-C:\Users\sinichisama\source\repos\Computer Graphics 0-5\Computer Graphics 0-5\소스.c(45,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\sinichisama\source\repos\Computer Graphics 0-5\Computer Graphics 0-5\소스.c(28,6): warning C4101: 'commandnum' :참조되지 않은 지역 변수입니다.
-  Computer Graphics 0-5.vcxproj -> C:\Users\sinichisama\source\repos\Computer Graphics 0-5\x64\Debug\Computer Graphics 0-5.exe
+C:\Users\sun98\OneDrive\Desktop\2ND 2\컴퓨터 그래픽스\과제\워밍업\Computer Graphics 0-5\Computer Graphics 0-5\소스.c(45,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\sun98\OneDrive\Desktop\2ND 2\컴퓨터 그래픽스\과제\워밍업\Computer Graphics 0-5\Computer Graphics 0-5\소스.c(28,6): warning C4101: 'commandnum' :참조되지 않은 지역 변수입니다.
+  Computer Graphics 0-5.vcxproj -> C:\Users\sun98\OneDrive\Desktop\2ND 2\컴퓨터 그래픽스\과제\워밍업\Computer Graphics 0-5\x64\Debug\Computer Graphics 0-5.exe

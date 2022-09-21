@@ -21,8 +21,8 @@ int main()
 	init_board(board, viewboard);
 
 	for (int i = 0; i < 20; i++) {
+		int check = 1;
 		for (int j = 0; j < 2; j++) {
-			if (_kbhit())
 			system("cls");
 			print_board(board, viewboard);
 			printf("count %d, score %d\n", 20 - i, score);
@@ -32,19 +32,29 @@ int main()
 
 			if (line == 'r') {
 				init_board(board, viewboard);
-				break;
 				i = 0;
+				j = 0;
 			}
 			else if (line == 'q')
 				break;
 			else
-				viewboard[row-1][line - 97] = 1;
+				viewboard[row-1][line - 97] = 3;
 		}
 
 		if (line == 'q' || line == 'r')
 			break;
 		else
 			check_board(board, viewboard);
+
+		for (int i = 0; i < 4; i++)
+			for (int j = 0; j < 4; j++)
+				if (board[i][j] != 1 && board[i][j] != 3)
+					check = 0;
+
+		if (check) {
+			printf("clear\n");
+			break;
+		}
 	}
 	return 0;
 }
@@ -60,7 +70,7 @@ void print_board(char board[][4],int viewboard[][4]) {
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
 			if (viewboard[i][j] == 0)
 				printf(" * ");
-			else if (viewboard[i][j] == 1) {
+			else if (viewboard[i][j] == 1 || viewboard[i][j] == 3) {
 				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), board[i][j] - 64);
 				printf(" %c ", board[i][j]);
 			}
@@ -97,7 +107,7 @@ void check_board(char board[][4], int viewboard[][4]) {
 
 	for (int i = 0; i < 4; i++) {
 		for(int j= 0;j<4;j++)
-			if (viewboard[i][j] == 2) {
+			if (viewboard[i][j] == 3) {
 				count[k][0] = i;
 				count[k++][1] = j;
 			}

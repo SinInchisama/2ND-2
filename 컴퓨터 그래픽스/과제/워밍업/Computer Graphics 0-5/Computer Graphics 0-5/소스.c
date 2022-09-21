@@ -131,6 +131,7 @@ void addtoplist(char* command, List* list) {
 				if (list->coor[a] == NULL) {
 					list->coor[a] = Addnum;
 					list->count++;
+					break;
 				}
 		}
 		}
@@ -176,16 +177,24 @@ void addunderlist(char* command, List* list)
 		Addnum->x = atoi(num[0]);
 		Addnum->y = atoi(num[1]);
 		Addnum->z = atoi(num[2]);
-		Addnum->Ascend = Addnum->x ^ 2 + Addnum->y ^ 2 + Addnum->z ^ 2;
+		Addnum->Ascend = Addnum->x * Addnum->x + Addnum->y * Addnum->y + Addnum->z * Addnum->z;
 
 		if (list->count > 0) {
-			for (i = 9; i > 0; i--) {
-				if(list->coor[i-1])
-				list->coor[i] = list->coor[i - 1];
+			if (list->top != 10) {
+				for (i = 9; i > 0; i--) {
+					list->coor[i] = list->coor[i - 1];
+				}
+				list->coor[0] = Addnum;
+				list->count++;
+				list->top++;
 			}
-			list->coor[0] = Addnum;
-			list->count++;
-			list->top++;
+			else {
+				for(int i = 0;i<10;i++)
+					if (list->coor[i] == NULL) {
+						list->coor[i] = Addnum;
+						break;
+					}
+			}
 		}
 	}
 }
@@ -249,7 +258,7 @@ void closepoint(List list) {
 
 		for (int i = 0; i < 10; i++) {
 			if (list.coor[i] != NULL) {
-				if (list.coor[i]->Ascend > result) {
+				if (list.coor[i]->Ascend < result) {
 					result = list.coor[i]->Ascend;
 					value = i;
 				}
