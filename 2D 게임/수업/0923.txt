@@ -1,0 +1,113 @@
+▪ “가상 월드에 존재하는 여러 객체들의 상호작용하여 시뮬레이션하는 것”
+
+게임상태에 따라 2d,3d vr이 나뉘어짐
+
+특정플랫폼에서 실행되는 것 -> 플랫폼 종속적	아닌거 -> 독립적
+
+import pico2d
+Pico2d is prepared.
+pico2d.open_canvas()
+pico2d.hide_lattice()		모눈 제거 -> 모눈은 10단위
+pico2d.show_lattice()	모눈 다시 나타나게
+pico2d.close_canvas()
+pico2d.open_canvas(1280,720)
+pico2d.close_canvas()
+
+
+jpg - 대표적인 압축포맷. 압축에는 2가지 스타일이 있음. 무손실 압축이라고 풀었을때 원본이 그대로 유지되는거[ex) zip]
+	손실 압축 - 압축을 풀면 원본이 그대로 복구 되지 못함.[ex) jpg]
+png - 투명정보를 저장할 수 있음. 압축은 되지만 손실은 없음.
+
+캐릭터는 보통 png 배경정도는 jpg를 사용함.
+
+
+image = pico2d.load_image('character.png')
+cannot load character.png
+Traceback (most recent call last):
+  File "<pyshell#10>", line 1, in <module>
+    image = pico2d.load_image('character.png')
+  File "C:\Users\sun98\AppData\Roaming\Python\Python310\site-packages\pico2d\pico2d.py", line 349, in load_image
+    raise IOError
+OSError
+모든 프로그램은 프로그램이 액세스할 수 있는 폴더가 있다.
+워킹 폴더 - 프로그램이 액세스 할 수 있는 폴더.
+
+os.getcwd()
+'C:\\Program Files\\Python310'
+- working 폴더를 알 수 있는 방법.
+
+os.listdir()
+하위 폴더를 아는 방법.
+
+가지고 온 내용을 새로운 폴더로 만들어. 
+
+os.chdir('c:/Users/sun98/OneDrive/Desktop/2ND 2/2019180009_2DGP_DRILL/2019180009_2DGP_DRILL/Drill#6')
+         
+os.getcwd()
+         
+'c:\\Users\\sun98\\OneDrive\\Desktop\\2ND 2\\2019180009_2DGP_DRILL\\2019180009_2DGP_DRILL\\Drill#6'
+img = pico2d.load_image('character.png')
+         
+img
+         
+<pico2d.pico2d.Image object at 0x000001F878562B30>
+img.w
+         
+42
+img.h
+         
+92
+
+
+피봇 - 이미지의 좌표에 맞춰지는지.
+
+
+from pico2d import *
+
+open_canvas()
+
+grass = load_image('grass.png')
+character = load_image('character.png')
+
+x= 0
+while x<800:
+    clear_canvas_now()
+    grass.draw_now(400,30)
+    character.draw_now(x,90)
+    x = x + 2
+    delay(0.01)
+
+close_canvas()
+
+
+
+
+
+
+
+from pico2d import *
+
+open_canvas()
+
+grass = load_image('grass.png')
+character = load_image('character.png')
+
+
+while True:
+    for x in range(400,770):
+        clear_canvas_now()
+        grass.draw_now(400,30)
+        character.draw_now(x,90)
+        x = x + 2
+    for y in range(30,570):
+        clear_canvas_now()
+        grass.draw_now(400,30)
+        character.draw_now(770,y)
+        y = y + 2
+    for x in range(770,30):
+        clear_canvas_now()
+        grass.draw_now(400,30)
+        ch
+        
+
+close_canvas()
