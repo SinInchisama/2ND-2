@@ -1,0 +1,41 @@
+﻿  소스.cpp
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(30,26): warning C4305: '초기화 중': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(37,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(124,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(127,63): warning C4244: '=': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(128,63): warning C4244: '=': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(129,63): warning C4244: '=': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(130,63): warning C4244: '=': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(153,2): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(173,20): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(173,38): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(179,20): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(179,38): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(185,20): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(185,38): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(190,19): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(190,37): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(202,21): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(202,39): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(208,21): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(208,39): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(215,21): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(215,39): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(220,21): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(220,39): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(234,21): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(234,39): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(237,21): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(237,39): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(241,21): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(241,39): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(244,21): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(244,39): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(249,21): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(249,39): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(252,21): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(252,39): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(256,21): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(256,39): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(259,21): warning C4305: '-=': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\sinichisama\Desktop\2ND-2\컴퓨터 그래픽스\과제\1\Project2\소스.cpp(259,39): warning C4305: '+=': 'double'에서 'GLfloat'(으)로 잘립니다.

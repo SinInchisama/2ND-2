@@ -150,7 +150,7 @@ void Motion(int x, int y) {
 	glutPostRedisplay();*/
 }
 
-void TimerFunction(int value) {
+ {
 	glutPostRedisplay(); // 화면 재 출력
 	switch (movestyle) {
 	case 1:
