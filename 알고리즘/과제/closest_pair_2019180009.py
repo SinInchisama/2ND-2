@@ -40,7 +40,7 @@ def closest_of_three(array,start,end):   #end = inclusive
     d2 = distance(array[start],array[start + 2])
     d3 = distance(array[start + 1],array[start + 2])
 
-    if d1 < d2 and d1 < d3:
+    if d1 <= d2 and d1 <= d3:
         return start,start + 1,d1
     if d2 < d3:
         return start,start + 2, d2
@@ -99,7 +99,7 @@ def closest_pair(array,start,end):      #end = inclusive
                 break;
             dd = math.sqrt((c1.x - c2.x) ** 2 + dy ** 2)
             if dd < d:
-                s,e,d = array[i1].index,array[i2].index,dd
+                s,e,d = c1.index,c2.index,dd
 
     return s,e,d
 
